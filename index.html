@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Garage Name | MOT, Servicing & Tyres</title>
+  <meta name="description" content="Local MOT testing, car servicing and tyre fitting. Book online — friendly local garage in Your Town.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --void: #020203;
+      --carbon: #111314;
+      --cyan: #d7f3f5;
+      --gold: #f5d76e;
+      --font: 'Inter', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--void);
+      color: var(--cyan);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.56;
+      font-weight: 400;
+    }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+    
+    /* Navigation */
+    header { padding: 20px 0; position: sticky; top: 0; background: var(--void); z-index: 100; }
+    .nav-wrap { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 20px; font-weight: 500; color: var(--cyan); text-decoration: none; }
+    nav a { color: var(--cyan); text-decoration: none; padding: 8px 12px; font-size: 14px; }
+    nav a:hover { text-decoration: underline; }
+    .phone { color: var(--gold); font-weight: 500; }
+    
+    /* Hero */
+    .hero { padding: 80px 0 100px 0; }
+    h1 { font-size: 50px; font-weight: 300; line-height: 1.1; margin-bottom: 24px; }
+    .hero p { font-size: 18px; max-width: 600px; margin-bottom: 40px; opacity: 0.85; }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--void);
+      padding: 14px 32px;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: transform 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    
+    /* Services */
+    section { padding: 80px 0; }
+    h2 { font-size: 40px; font-weight: 300; margin-bottom: 48px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card {
+      background: var(--carbon);
+      padding: 40px;
+      border-radius: 8px;
+    }
+    .card h3 { font-size: 22px; font-weight: 400; margin-bottom: 12px; color: #fff; }
+    .price { font-size: 24px; font-weight: 500; color: var(--gold); margin-top: 16px; }
+    
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+    }
+    .hours p { margin-bottom: 8px; }
+    .hours strong { color: #fff; }
+    
+    /* Footer */
+    footer {
+      background: var(--carbon);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.6;
+      margin-top: 40px;
+    }
+    
+    /* Mobile */
+    @media (max-width: 768px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 26px; }
+      .nav-links { display: none; }
+      section { padding: 50px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav-wrap">
+    <a href="#" class="logo">🔧 Your Garage Name</a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:01234567890" class="phone">📞 01234 567 890</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Honest. Reliable.<br>Local Garage.</h1>
+    <p>MOT testing, car servicing and tyre fitting in Your Town. Friendly service, fair prices, no hidden surprises.</p>
+    <a href="tel:01234567890" class="btn">📞 Call to Book</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <h2>What We Do</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🚗 MOT Testing</h3>
+        <p>Class 4 MOT tests carried out on-site. We’ll advise on any work needed — never pressure you.</p>
+      </div>
+      <div class="card">
+        <h3>🔩 Car Servicing</h3>
+        <p>Interim, Full and Manufacturer servicing. We follow your car’s schedule and stamp the book.</p>
+      </div>
+      <div class="card">
+        <h3>🛞 Tyres</h3>
+        <p>Budget and premium tyres fitted, balanced and disposed of. All major brands in stock.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ Repairs</h3>
+        <p>Brakes, exhausts, suspension — all mechanical work carried out to high standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices" style="background: var(--carbon);">
+  <div class="wrap">
+    <h2>Our Prices</h2>
+    <div class="grid">
+      <div class="card" style="background: var(--void);">
+        <h3>MOT Test</h3>
+        <p>Class 4 — up to 3,000kg</p>
+        <div class="price">£55.00</div>
+      </div>
+      <div class="card" style="background: var(--void);">
+        <h3>Interim Service</h3>
+        <p>Oil & filters + major checks</p>
+        <div class="price">£89.00</div>
+      </div>
+      <div class="card" style="background: var(--void);">
+        <h3>Full Service</h3>
+        <p>35-point check + all filters</p>
+        <div class="price">£159.00</div>
+      </div>
+      <div class="card" style="background: var(--void);">
+        <h3>Tyre Fitting</h3>
+        <p>From per wheel + balancing</p>
+        <div class="price">£20.00</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <h2>Find Us</h2>
+    <div class="contact-grid">
+      <div>
+        <h3 style="color:#fff; font-size:18px; margin-bottom:16px;">📍 Address</h3>
+        <p>12 Garage Lane<br>Your Town<br>Postcode<br>United Kingdom</p>
+      </div>
+      <div class="hours">
+        <h3 style="color:#fff; font-size:18px; margin-bottom:16px;">🕐 Opening Hours</h3>
+        <p><strong>Mon – Fri:</strong> 08:30 – 17:30</p>
+        <p><strong>Saturday:</strong> 08:30 – 13:00</p>
+        <p><strong>Sunday:</strong> Closed</p>
+      </div>
+      <div>
+        <h3 style="color:#fff; font-size:18px; margin-bottom:16px;">📞 Get in Touch</h3>
+        <p><strong>Phone:</strong><br>01234 567 890</p>
+        <p><strong>Email:</strong><br>hello@yourgarage.co.uk</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Your Garage Name. All rights reserved.</p>
+    <p style="margin-top: 8px;">VAT Registered • MOT Approved</p>
+  </div>
+</footer>
+
+</body>
+</html>
